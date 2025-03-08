@@ -18,6 +18,7 @@ https://xxx.cn/ddos?wz=https://xxxx.cn&bf=100&cs=50&ll=1&key=8888
 示例：
 https://xxx.cn/ddos?wz=https://xxxx.cn&bf=100&cs=50&key=8888
 意思是：向目标网站发起并发为 100 次数为 50 的 cc 攻击
+记得允许写入权限，写入调用记录在 json
 
 
 
