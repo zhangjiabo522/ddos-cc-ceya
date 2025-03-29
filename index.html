@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> API 介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .api-box {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+        .slider-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .slider {
+            display: inline-block;
+            padding: 10px;
+            min-width: 300px;
+            margin: 5px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> API 介绍</h1>
+        <p>本页面展示 DDoS/CC 攻击 API 端点的使用说明和示例。</p><div class="api-box">
+        <h2>DDoS API</h2>
+        <p><strong>接口地址：</strong>xxx.cn/ddos</p>
+        <p><strong>参数：</strong>ll = 流量 (GB), bf = 并发, cs = 请求数, wz = 目标网站, key = API 密钥</p>
+    </div>
+    
+    <div class="api-box">
+        <h2>CC API</h2>
+        <p><strong>接口地址：</strong>xxx.cn/cc</p>
+        <p><strong>参数：</strong>bf = 并发, cs = 请求数, wz = 目标网站, key = API 密钥</p>
+    </div>
+    
+    <h2>示例</h2>
+    <div class="slider-container">
+        <div class="slider">示例 1: <code>https://xxx.cn/ddos?wz=https://xxxx.cn&bf=100&cs=50&ll=1&key=8888</code></div>
+        <div class="slider">示例 2: <code>https://xxx.cn/cc?wz=https://xxxx.cn&bf=100&cs=50&key=8888</code></div>
+        <div class="slider">示例 3: <code>https://xxx.cn/ddos?wz=https://yyyy.cn&bf=200&cs=75&ll=2&key=8888</code></div>
+    </div>
+</div>
+
+</body>
+</html>
